@@ -2,7 +2,7 @@ import pymongo
 
 # from logWriter import log_write
 
-conn = pymongo.MongoClient("mongodb://192.168.11.140:27017")
+conn = pymongo.MongoClient()
 db = conn.admin
 col = db.pyCurrency
 
