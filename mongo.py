@@ -2,9 +2,9 @@ import pymongo
 
 # from logWriter import log_write
 
-conn = pymongo.MongoClient("")
-db = conn.golangGinBlog
-col = db.currency
+conn = pymongo.MongoClient("mongodb://192.168.11.140:27017")
+db = conn.admin
+col = db.pyCurrency
 
 
 def insert_log(log):
